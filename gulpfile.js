@@ -6,7 +6,7 @@ var minifyCSS = require('gulp-minify-css');
 var webserver = require('gulp-webserver');
 
 gulp.task('script', function(){
-	gulp.src(['node_modules/jquery/dist/jquery.js', 'node_modules/materialize-css/dist/js/materialize.js', 'assets/js/main.js', 'assets/js/masonry.js', 'assets/js/javascript.js','assets/js/json.js'])
+	gulp.src(['node_modules/jquery/dist/jquery.js', 'node_modules/materialize-css/dist/js/materialize.js', 'assets/js/main.js', 'assets/js/masonry.js','assets/js/json.js'])
 	.pipe(concat('script.js'))
 	//carpeta dist
 	.pipe(gulp.dest('dist/js/'));
