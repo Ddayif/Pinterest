@@ -3,31 +3,79 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Pinterest</title>
-	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="shorcut icon" type="text/css" href="dist/img/Pinterest-logo.png">
 	<link rel="stylesheet" type="text/css" href="dist/css/style.min.css">
 </head>
 <body>
+<!-- comienza mi nav -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col s2 m2 l2 xl2">
+				<img class="img-principal" src="dist/img/Pinterest-logo.png">
+				<a href="#">Inicio</a>
+			</div>
+		    <div class="col s5 m5 l5 xl5">
+		      	<form>
+			        <div class="input-field mi-buscador">
+			          	<input id="search" type="search" required>
+			          	<label class="label-icon" for="search"><i class="material-icons">search</i></label>
+			          	<i class="material-icons">close</i>
+			        </div>
+		      	</form>
+		    </div>
+		    <div class="col s2 m2 l2 xl2 contenedor-dropdown">
+		      	<a class="dropdown-button" href="#!" data-activates="dropdown1">Todos los pines<i class="material-icons right">arrow_drop_down</i></a>
+		        <ul id="dropdown1" class="dropdown-content">
+				  <li><a href="#!">one</a></li>
+				  <li><a href="#!">two</a></li>
+				  <li class="divider"></li>
+				  <li><a href="#!">three</a></li>
+				</ul>
+		    </div>
+		    <div class="col s1 m1 l1 xl1 contenedor-dropdown">
+		    	<a class="dropdown-button" href="#!" data-activates="dropdown2"><i class="material-icons">dehaze</i></a>
+		    	  <ul id="dropdown2" class="dropdown-content">
+				  <li><a href="#!">fotografias</a></li>
+				  <li><a href="#!">visitar</a></li>
+				</ul>
+		    </div>
+    	</div>
+    </div>
+    <div class="container-fluid">
+    	<div class="row">
+    		<div class="col s12 m12 l12 xl12">
+   				<ul class="opciones">
+	    			<li><a href="#">Drees</a></li>
+	    			<li><a href="#">San Miguel De Allende</a></li>
+	    			<li><a href="#">Friki</a></li>
+	    			<li><a href="#">Invitaciones</a></li>
+	    			<li><a href="#">Fotoghafy</a></li>
+	    			<li><a href="#">Photocall</a></li>
+	    			<li><a href="#">Damas</a></li>
+	    			<li><a href="#">Ilumination</a></li>
+	    			<li><a href="#">Ramo</a></li>
+	    			<li><a href="#">Souvernires</a></li>
+	    			<li><a href="#">Invitación</a></li>
+	    		</ul>
+    		</div>
+    	</div>
+    </div>
+<!-- termina el nav -->
+
+<!-- este div contiene las fotos recorridaspor el forEach, donde se veran impresas dentro de un contenedor, row y col -->
 	<div class="contenedor">
 		<div class="row">
-			<div class="elemento">
-			</div>
+			<div class="elemento"></div>
 		</div>	
 	</div>
 
 	
-		<!-- Modal Structure -->
-	  	<div id="modal1" class="modal modal-fixed-footer">
-	    	<div class="modal-content">
-	      	
-	    	</div>
-	    	<div class="modal-footer">
-	  
-	    	</div>
-	    	<div class="contenedor-modal">
-	  	</div>
-	  	
-		</div>
+<!-- comienza la estructura del modal -->
+  	<div id="modal1" class="modal modal-fixed-footer">
+    	<div class="contenedor-modal"></div>
+    </div>
+<!-- termina la estructura del modal -->
 	<script type="text/javascript" src="dist/js/script.js"></script>
 </body>
 </html>
