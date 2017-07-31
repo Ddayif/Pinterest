@@ -4,7 +4,7 @@ $(document).ready(function(){
 	});
 
 	miJson.forEach(function(e){
-		$('.elemento').append('<div class="col s2 m2 l2 xl2 caja"><img class="responsive-img materialboxed modal-trigger" href="#modal1" src="dist/img/'+ e.image_url +'">'+ '<br>' + '<h6 class="titulo left-align">'+ e.title+'</h6><i class="right material-icons">check_circle</i>'+'<i class="right material-icons">save</i>36,6k'+ '<p class= "descripcion left-align">'+ e.description+'</p><p class= "user left-align">'+ e.user + '&nbsp<span>#</span>' + e.hashtag + '</p></div');	
+		$('.elemento').append('<div class="col s2 m2 l2 xl2"><img class="responsive-img materialboxed modal-trigger" href="#modal1" src="dist/img/'+ e.image_url +'">'+ '<br>' + '<h6 class="titulo left-align">'+ e.title+'</h6><i class="right material-icons">check_circle</i>'+'<i class="right material-icons">save</i>36,6k'+ '<p class= "descripcion left-align">'+ e.description+'</p><p class= "user left-align">'+ e.user + '&nbsp<span>#</span>' + e.hashtag + '</p></div');	
 		console.log(e);
 	});
 

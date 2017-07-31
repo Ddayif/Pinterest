@@ -22,7 +22,7 @@ body{
 	margin-top: 2%;
 }
 
-li{
+.buscador-rapido{
 	display: inline-block;
 	background-color: rgb(143, 125, 113);
     padding: 16px;
@@ -54,9 +54,6 @@ li{
 		}
 }
 
-.caja{
-	@include border();
-}
 
 .titulo{
 	@include titulo();
@@ -69,12 +66,12 @@ li{
 }
 
 .user{
-	font-size: 8px;
+	font-size: $font-size;
 	color: blue;
 	font-weight: 700;
 }
 
 .descripcion{
-	font-size: 8px;
+	font-size: $font-size;
 	color: purple;
 }
